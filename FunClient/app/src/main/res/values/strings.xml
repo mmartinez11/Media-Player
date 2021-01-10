@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FunClient</string>
+
+    <string-array name="music_names">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Pick a Picture</item>
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+
+</resources>

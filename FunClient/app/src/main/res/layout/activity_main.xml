@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="304dp"
+        android:text="Pause"
+        android:onClick="pauseMusic"
+        app:layout_constraintStart_toEndOf="@+id/btn_resume"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <Button
+        android:id="@+id/btn_startService"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:text="Start Service"
+        android:onClick="startService"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_play" />
+
+    <ListView
+        android:id="@+id/clip_list_view"
+        android:layout_width="412dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/darker_gray"/>
+
+    <Button
+        android:id="@+id/btn_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="43dp"
+        android:text="Resume"
+        android:onClick="resumeMusic"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pause"
+        app:layout_constraintStart_toEndOf="@+id/btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="375dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="19dp"
+        android:text="Fun Client"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_stopPlayBack"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="40dp"
+        android:text="Stop Playback"
+        android:onClick="stopPlayback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_stopService"
+        app:layout_constraintTop_toBottomOf="@+id/btn_pause" />
+
+    <Button
+        android:id="@+id/btn_stopService"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="31dp"
+        android:text="Stop Service"
+        android:onClick="stopService"
+        app:layout_constraintEnd_toStartOf="@+id/btn_stopPlayBack"
+        app:layout_constraintStart_toEndOf="@+id/btn_startService"
+        app:layout_constraintTop_toBottomOf="@+id/btn_resume" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="304dp"
+        android:text="Play"
+        android:onClick="playMusic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="277dp"
+        android:layout_height="202dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="142dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="165dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

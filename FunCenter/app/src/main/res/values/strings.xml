@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fun Center</string>
+    <string-array name="music_names">
+        <item>One</item>
+        <item>Two</item>
+        <item>Three</item>
+    </string-array>
+</resources>
